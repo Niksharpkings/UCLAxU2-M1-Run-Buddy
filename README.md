@@ -51,9 +51,11 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 ##### Version:
 
-`1.0.1 - | Added: UCLAxU2-Original-and-SnapShots folder, and Class-Nodes.md | Updated index.html with comments and element tags | `
+`v1.0.2 - ! html outline developed and .gitignore | Added more notes to the class-notes.md |`
 
-`1.0.0 - | Repo Created | Added Files: Index.html, README.md, LICENSE, .gitignore |`
+`v1.0.1 - | Added: UCLAxU2-Original-and-SnapShots folder, and Class-Nodes.md | Updated index.html with comments and element tags | `
+
+`v1.0.0 - | Repo Created | Added Files: Index.html, README.md, LICENSE, .gitignore |`
 
 ---
 
