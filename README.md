@@ -19,7 +19,7 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 - I was tasked to create a landing page for the website as a freelancer that was hired by a friend at Run Buddy.
 - A website service that lets runners sign up for personal training.
 - Create a landing page is to attact more sign-ups as a new hired Full-Stack Developer that will hand off this site to internal developers to complete the data collection.
-- Set up a basic structured HTML & CSS document.
+- Set up a basic structured semantic HTML & CSS document.
 
 ---
 
@@ -50,6 +50,8 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 4) [GitHub - https://github.com/](https://github.com/)
 
 ##### Version:
+
+`v1.0.4 - | Updated readme and class-notes | added new html tags, nav, a, ul, and li and added href tag to an anchor tags in the index.html`
 
 `v1.0.3 - | Added original Snapshot zip for module 1.1 |`
 

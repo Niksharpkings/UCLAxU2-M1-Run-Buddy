@@ -228,7 +228,7 @@
 
 ---
 
-### HTML
+### Semantic HTML
 
 HTML (Hypertext Markup Language)
 
@@ -261,4 +261,40 @@ What We Do What You Do Your Trainers Reach Out  text in the body element
 
 `<div>` elements here, which are like containers, to hold relevant information together. stands for "content division."
 
-`<section>` element tag  represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.
+`<section>` element tag represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.
+
+`<nav>` element tag represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+
+`<header>` element tag represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.
+
+`<footer>` element tag represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data, contact information, links to related documents, and so on.
+
+`<img>` element tag represents an image in the document. It has two required attributes: src, which specifies the URL of the image, and alt, which provides a text description of the image.
+
+`<a>` element tag creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. The content of the element is the text that will be displayed for the link. This term was coined in the early 1960s, its definition has expanded to include other types of media as well (such as images and videos).
+
+`<ul>` element tag represents an unordered list of items, typically rendered as a bulleted list. Each item in the list is represented by an `<li>` element.
+
+`<ol>` element tag represents an ordered list of items, typically rendered as a numbered list. Each item in the list is represented by an `<li>` element.
+
+`<li>` element tag represents an item in a list. It must be contained in a parent element: an ordered list (`<ol>`) or an unordered list (`<ul>`).
+
+![1676107626085](image/Class-Notes/1676107626085.png)
+
+
+`<p>` element tag represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
+
+Accessibility is the practice of adding HTML elements in a way that allows assistive technology, such as screen readers, to explain the page's content in a meaningful way to those who have a disability such as vision or hearing loss.
+
+SEO, or search engine optimization, is the process of maximizing the number of visits a website receives and how frequently it shows up in search results.
+
+
+`href=` is an HTML **attribute can be used to give an HTML element a unique identity, create relationships with other elements, and provide design changes using CSS. They give functionality, meaning, and context to HTML elements. Attributes aren't necessary for every element, but some do require them. One of those is the `<a>` element. If we were to omit the `href` attribute in the preceding examples, the links wouldn't work. **
+
+Here are some popular attributes:
+
+* The **`id`** attribute is a unique identifier for an HTML element. The value of this can only be used once per HTML document.
+* The **`class`** attribute is another way of identifying an HTML element, but its value is expected to be more general and can be reused across multiple HTML elements on a page.
+* The **`title`** attribute—not to be mistaken for the `<title>` element—holds a value that appears as a small pop-up (known as a tool-tip) when the cursor is pointed at an element for a period of time.
+
+(`"/"`) a forward slash—will always represent the path to the topmost directory of an application or project. will be taken to the topmost directory
