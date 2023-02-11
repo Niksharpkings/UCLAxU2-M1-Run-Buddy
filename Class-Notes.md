@@ -281,13 +281,11 @@ What We Do What You Do Your Trainers Reach Out  text in the body element
 
 ![1676107626085](image/Class-Notes/1676107626085.png)
 
-
 `<p>` element tag represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
 
 Accessibility is the practice of adding HTML elements in a way that allows assistive technology, such as screen readers, to explain the page's content in a meaningful way to those who have a disability such as vision or hearing loss.
 
 SEO, or search engine optimization, is the process of maximizing the number of visits a website receives and how frequently it shows up in search results.
-
 
 `href=` is an HTML **attribute can be used to give an HTML element a unique identity, create relationships with other elements, and provide design changes using CSS. They give functionality, meaning, and context to HTML elements. Attributes aren't necessary for every element, but some do require them. One of those is the `<a>` element. If we were to omit the `href` attribute in the preceding examples, the links wouldn't work. **
 
@@ -298,3 +296,110 @@ Here are some popular attributes:
 * The **`title`** attribute—not to be mistaken for the `<title>` element—holds a value that appears as a small pop-up (known as a tool-tip) when the cursor is pointed at an element for a period of time.
 
 (`"/"`) a forward slash—will always represent the path to the topmost directory of an application or project. will be taken to the topmost directory
+
+---
+
+# CSS
+
+Cascade Style Sheet
+
+## CSS Syntax
+
+CSS's syntax is fairly simple and can be used in many different ways to achieve an intended presentation or design. Developers use it by listing the HTML element they want to style, then listing a predefined style characteristic (known as a  **property** ) and giving it a value.
+
+Let's look at some CSS syntax, as shown in the following image:
+
+![1676108261012](image/Class-Notes/1676108261012.png)
+
+* **Selector** : This is the part that says "let's find this matching HTML element (in this case, the `<body>` element) so we can tell it what it should look like." This is the most basic of selectors, where we select by HTML element name. We can use a CSS selector to be very vague (apply styles to all `<a>` elements) or very specific (apply styles to any `<a>` element that's inside a `<header>` element and ignore any of the others that are not). We'll get into more specific selectors later.
+* **Property name** : CSS has an extensive list of possible style properties that it recognizes. All we need to do is list one in between the selector's `{}` brackets and we can now change how that element looks. Examples of popular CSS properties are `color` (to control the text color), `background-image` (to apply a background image to that section), and `font-family` (to change the default font). If we use one that isn't predefined, then the browser will ignore the style.
+* **Property value** : This is where we get to provide the desired look to the element. Like properties, CSS has a specific set of possible variations for values that it will understand. In the preceding image, we provide a value of `#39a6b2` to the `color` property (more on this value's meaning soon), which is a value that represents a color and a valid value for any CSS property that deals with colors. Here's another example: if we were to say `font-size: 3meters`, it wouldn't be understood and thus wouldn't be applied. But if we were to say `font-size: 24px`, the font's size would be set to 24 pixels because that's a value CSS can understand.
+* **Declaration** : A `property: property-value` pairing like we see with `font-family: Helvetica` is what's known as a declaration.
+* **Declaration terminator** : To apply multiple styles to an element (known as a  **declaration block** ), we need some way to tell the language "this declaration is finished; make a new one." CSS knows a declaration is complete when it sees a semicolon (`;`) at the end. Accidental omission of the terminator will result in CSS thinking everything after it is still part of that first declaration, so it is very important to terminate your declarations.
+* **CSS rule** : The entire block shown in the preceding image is what's known as a  **CSS rule** . It is the combination of the selector and all of the declarations.
+
+writing CSS with the file extension `.css`
+
+connect it to the HTML file using a specific HTML element `<link>`, which goes in between the opening and closing `<head>` tags and looks something like this (depending on your filename):
+
+`style` attribute with the styles you want to apply directly to the HTML tag element. This is known as **inline styling** because it is directly included in the element it's styling, as in the following code example:
+
+a `<style>` element with all CSS style rules contained within it. The `<style>` element typically goes in the `<head>` of the document.
+
+This reinforces a concept called  **separation of concerns** , which means that it's better to keep code that serves different purposes in separate files so that it's easier to maintain.
+
+provided a value to an `href` that points to another file in the directory. This is known as **relative pathing**
+
+`rel`, is providing information on the nature of the relationship of the linked document—the one specified with the href—to the HTML. In this case and most of the time, we'll use `rel="stylesheet"`
+
+ther option would be to put a fixed path (also known as an  **absolute path** ) from the host computer's directory structure, which would look something like this:
+
+```html
+<link rel="stylesheet" href="/Users/<username>/Desktop/run-buddy/assets/css/style.css" />
+```
+
+potential problem here? This path is very specific to someone's personal computer—it even has a username in it. If we were to put this code into production or share it with a teammate, the project's code would then live on a different computer entirely. The path in the example most likely does not exist on that computer, meaning any reference to it would break and the page wouldn't load correctly.
+
+The best solution for this is to use  **relative pathing** . With relative pathing, when we push up the entire folder structure for the project all at once, the paths don't lose context as to where they are.
+
+Here are a few ways that padding can be applied:
+
+```css
+ /* Applies 20px to every side (top, right, bottom, left) */
+ header {
+   padding: 20px;
+ }
+
+ /* Applies 20px to the top and bottom, then 35px to the left and right */
+ header {
+   padding: 20px 35px;
+ }
+
+ /* Applies 10px to the top, 15px to the right, 20px to the bottom, 25px to the left (in that specific clockwise order) */
+ header {
+   padding: 10px 15px 20px 25px;
+ }
+
+ /* Explicitly list the side it should be applied to*/
+ header {
+   padding-top: 10px;
+   padding-right: 15px;
+   padding-bottom: 20px;
+   padding-left: 25px;
+ }
+```
+
+The **CSS Box Model** is a visual display of the properties in the CSS box that includes the content, padding, border, and margins, which are all built around each other like layers in an onion. Some of the styles of each layer—like border thickness, style, and color—can be manipulated using CSS.
+
+![1676108853121](image/Class-Notes/1676108853121.png)
+
+break down the CSS Box Model:
+
+* **Content** is the innermost box inside the CSS box that will contain text as well as any nested elements. The content box size is determined by the height and width.
+* **Padding** refers to the inside margin within the CSS box. Each of the four sides of the padding size can be specified.
+* **Border** sits on the outside edge of the padding and the inside edge of the margin. This layer's sides, size, and styles can be specified, similarly to the padding and margin. Such as border-bottom or border-style or even border-top-color. This property also needs a weight of the line, style, and color to render.
+* **Margin** behaves a lot like `padding`, except whereas `padding` creates space *inside* the box, `margin` creates space *outside* the box and pushes any other HTML elements before and after it away. It also behaves like `padding` in the way its values are provided (top, right, bottom, left).
+
+The **cascade** is a set of rules CSS follows when determining the order of importance when it comes to applying styles. Say, for instance, we want to make multiple `<a>` elements in the `<header>` yellow, but we want to make the `<a>` element in the `<footer>` blue. This can be achieved by being more specific in the selection of elements and saying "let's select all `<a>` that are in `<header>` and do this with them," meaning we will only focus on elements inside another element.
+
+The cascade considers the following three factors:
+
+1. **Importance** : When you add `!important` to the end of a property declaration, it will override any conflicting style declarations for that element. This isn't recommended because overriding the default "cascading" behavior of CSS will make your site harder to maintain.
+2. **Specificity** : CSS weighs the importance of different types of selectors by how specific they are. If we were to apply a style by selecting `h1`, it will apply to all `<h1>` elements. But if we were to then apply a style by selecting `header h1`, it will ignore conflicting property declarations in the `h1` definition and apply `header h1` instead because it is a more specific selection.
+3. **Source Order** : There's nothing to stop us from accidentally selecting and defining styles to the same element more than once, but CSS is read top-down. This means that if we select `h1` and give it a color of red on line 1, then select it again and give it a color of blue on line 4, the `<h1>` element will be blue because that was defined later.
+
+CSS styles are also applied through something known as  **inheritance** , which means that if a style isn't explicitly defined for a child element, it will use the style being applied to the parent element.
+
+**`text-decoration`** property applies `underline`, `strikethrough`, or `overline` styles to text default, the value is `none`
+
+The **`float`** property takes an element that wants to occupy 100% of its parent's width by default (known in CSS as a  **block element** ) and pushes everything that follows it below it, allowing other elements to come alongside of it or wrap around it (known in CSS as  **inline elements** ).
+
+We can use the `float` property when we have HTML elements that would look better side by side, which allows us to use the horizontal space in a more meaningful way. Other CSS properties allow us to turn block elements into inline elements, but using `float` in this case made more sense because we needed to turn this element into an `<inline>` element and move it to the right. The `float` property let's us do both at once.
+
+**block-level element** . Popular elements that have a default block styling are the `<h1>`–`<h6>` elements, `<div>`, `section`, `<nav>`, `<header>`, `<footer>`, and `<li>`.
+
+**inline element** , which only occupies the space it needs to occupy and does not demand 100% width. These are used to allow elements to appear to the left or right of them. The most popular inline element is the `<a>` element.
+
+CSS allows us to override these elements' default layout definitions through a few different ways, but the most on-the-nose one is to apply a `display` property to that element. For example, `display: block` forces an element to occupy 100% of the width of its parent. On the other hand, `display: inline` makes an element only occupy the space it needs and allows other elements to flow "in line" with it horizontally.
+
+The asterisk `*` we used here is used quite often in programming. It is typically called a wildcard, but in CSS it is known as a  **universal selector** . This is essentially a catch-all selector that says, "I won't match one thing—I'll match everything!"

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { /* selects all elements in the body tags */
+  color: #39a6b2; /* text color */
+  font-family: Helvetica, Arial, sans-serif; /* font look or style family */
+}
+
+header { /* selects all elements in the header tags */
+  padding: 20px 35px; /* padding top and bottom, left and right*/
+  background-color: #39a6b2; /* background color */
+}
+
+header h1 { /* selects all h1 elements in the header tag */
+  font-weight: bold; /* font weight thickness */
+  font-size: 36px; /* font size height and width*/
+  color: #fce138;
+  margin: 0; /* margin spacing */
+  display: inline; /* display inline means it will be displayed in the same line */
+}
+
+header a { /*select all anchor tags in the header */
+  text-decoration: none; /* removes underline from anchor tags */
+  color: #fce138;
+}
+
+header nav { /* selects all elements in the nav tags */
+  float: right; /* float right mean it will be moved to the right side of the nav container */
+  margin: 7px 0px; /* margin spacing 7px to the top and bottom and 0 for the right and left*/
+}
+
+header nav ul li { /* selects all elements in the li tags */
+  display: inline; /* display inline means it will be displayed in the same line */
+}
+
+header nav ul li a { /* selects all anchor tags in the li tags */
+  margin: 0px 30px;  /* margin spacing 0px to the top and bottom and 30px for the right and left*/
+  font-weight: lighter; /* font weight thickness */
+  font-size: 22px; /* font size height and width*/
+}

@@ -51,6 +51,8 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 ##### Version:
 
+`v1.0.5 - | class-notes added css info | added css file and linked it to index.html | added css properties to the * body, header, h1, a,nav, li, and li a, color margin padding font-family background-color font-weight font-size - display text-decoration  and float |`
+
 `v1.0.4 - | Updated readme and class-notes | added new html tags, nav, a, ul, and li and added href tag to an anchor tags in the index.html`
 
 `v1.0.3 - | Added original Snapshot zip for module 1.1 |`
