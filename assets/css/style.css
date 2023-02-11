@@ -96,6 +96,64 @@ section { /* selects all elements in the section tags */
   font-size: 16px; /* font size height and width*/
 }
 
+.intro { /* selects all elements in the intro tags */
+  text-align: center; /* text alignment */
+}
+
+.intro p { /* selects all elements in the p tags */
+  line-height: 1.7; /* line height */
+  color: #39a6b2; /* text color */
+  width: 80%; /* width of the intro paragraph */
+  font-size: 20px; /* font size height and width*/
+  margin: 0px auto; /* margin spacing */
+}
+
+.steps {  /* selects all elements in the steps tags */
+  text-align: center; /* text alignment */
+  background: #fce138; /* background color */
+}
+
+.steps div { /* selects all elements in the div tags */
+  margin-bottom: 80px; /* margin spacing */
+}
+
+.steps img { /* selects all elements in the img tags */
+  width: 15%; /* width of the steps image */
+  margin: 10px 0px; /* margin spacing 10px to the top and bottom and 0 for the right and left*/
+}
+
+.steps h3 { /* selects all elements in the h3 tags */
+  color: #024e76; /* text color */
+  font-size: 46px; /* font size height and width*/
+  margin-top: 10px; /* margin spacing */
+}
+
+.steps p { /* selects all elements in the p tags */
+  color: #39a6b2; /* text color */
+  font-size: 23px; /* font size height and width*/
+}
+
+.steps span { /* selects all elements in the span tags */
+  font-size: 38px; /* font size height and width*/
+}
+
+.section-title { /* selects all elements in the section-title tags */
+  font-size: 55px; /* font size height and width*/
+  color: #024e76; /* text color */
+  margin-bottom: 35px;  /* margin bottom spacing */
+  padding: 0 100px 20px 100px; /* padding top and bottom, left and right*/
+  display: inline-block; /* display inline-block  */
+  border-bottom: 3px solid; /* border bottom property  */
+}
+
+.primary-border { /* selects all elements in the primary-border tags */
+  border-color: #fce138; /* border color */
+}
+
+.secondary-border { /* selects all elements in the secondary-border tags */
+  border-color: #39a6b2; /* border color */
+}
+
 footer { /* selects all elements in the footer tags */
   background: #fce138; /* background color */
   width: 100%; /* width of the footer */

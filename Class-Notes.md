@@ -415,6 +415,8 @@ We can use the `float` property when we have HTML elements that would look bette
 
 **inline element** , which only occupies the space it needs to occupy and does not demand 100% width. These are used to allow elements to appear to the left or right of them. The most popular inline element is the `<a>` element.
 
+**Block elements** occupy 100% of the width of their parent, regardless of content size. **Inline elements** only occupy as much space as their content needs, which means that multiple inline elements can sit next to each other.
+
 CSS allows us to override these elements' default layout definitions through a few different ways, but the most on-the-nose one is to apply a `display` property to that element. For example, `display: block` forces an element to occupy 100% of the width of its parent. On the other hand, `display: inline` makes an element only occupy the space it needs and allows other elements to flow "in line" with it horizontally.
 
 The asterisk `*` we used here is used quite often in programming. It is typically called a wildcard, but in CSS it is known as a  **universal selector** . This is essentially a catch-all selector that says, "I won't match one thing—I'll match everything!"
@@ -473,3 +475,10 @@ A value of **`absolute`** positioning removes the element from the natural flow 
 A value of **`fixed`** positioning removes the element from the natural flow of the page elements and positions it relative to the viewport or browser window so that it isn't affected by scrolling. The `fixed` position value uses the `top`, `bottom`, `left` and `right` properties to offset the element from the viewport's margins.
 
 ![1676111781136](image/Class-Notes/1676111781136.png)
+
+
+This is shorthand for setting a top and bottom margin of zero and a left and right margin of `auto`. But what does `auto` mean? Essentially, it tells the browser to calculate the margins for us. When the browser is asked to do this on both sides of an element, it will do its best to make them even, thus pushing the element into the center.
+
+With Chrome DevTools, we can inspect the element's margins before `auto` is applied and after. In the following image, the orange boxes indicate the margins:
+
+![1676113416358](image/Class-Notes/1676113416358.png)
