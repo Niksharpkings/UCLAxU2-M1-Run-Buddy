@@ -322,6 +322,32 @@ Here are some guidelines for `alt` values:
 
 When a parent HTML element's style is applied to any child element, it is called  **inheritance** .
 
+
+## The iframe Element
+
+Fortunately, there is a special HTML element called an `<iframe>` that helps us do just this! An  **`<iframe>`** , which means  **inline frame** , nests browsing content and embeds an HTML page into the current page. An `<iframe>` can add rich features to a website, including videos with playback controls, GIFs, and maps. One caveat, however, is that not all websites support this feature.
+
+In this case, the `<iframe>` will contain a map of Run Buddy's address from Google Maps. Let's place the `<iframe>` inside the  **contact container** .
+
+Follow these steps to retrieve an `<iframe>` for the address:
+
+1. Enter your address in the search box on [Google Maps **Links to an external site.**](https://www.google.com/maps).
+2. Select the Share icon.
+3. Choose the Embed a map tab.
+4. Select the COPY HTML link to copy the `<iframe>` element.
+
+
+`<iframe>`:
+
+* The **`src`** attribute is the most important attribute; without it, nothing will render. The `src` value is a URL path linking to the external website content that will be embedded. This should be familiar because it's the same attribute used in the `<img>` element.
+* The **`style`** attribute is an inline style to set no border, for newer browsers.
+* The **`allowfullscreen`** attribute offers a link to view the map on a new page in full-screen mode. Some attributes are properties that can be turned on by simply adding the attribute. Notice how `allowfullscreen` doesn't have any value assignment. Another popular attribute that doesn't have a value assignment is `checked` for a `checkbox` input element.
+
+
+The **`<address>`** element defines the contact information for the author or owner of the document or parent element.
+
+The **`<a href="mailto:info@runbuddy.io">`** element uses the `mailto:` prefix in the anchor tag's `href` attribute to instruct the browser to open the default mail client application upon clicking the link. Then it populates the address field with the email address in the `href` value.
+
 ---
 
 # CSS
@@ -493,5 +519,8 @@ With Chrome DevTools, we can inspect the element's margins before `auto` is appl
 
 ![1676113416358](image/Class-Notes/1676113416358.png)
 
+The `overflow` property told the trainer's `<article>` element that it does in fact have content inside it, and that it needs to look for it and account for those two floated HTML elements' sizes. This is known as providing **block formatting context** to the element
 
-The `overflow` property told the trainer's `<article>` element that it does in fact have content inside it, and that it needs to look for it and account for those two floated HTML elements' sizes. This is known as providing **block formatting context** to the elemen
+A **type selector** is a CSS selector (in this case, `iframe`) that selects every HTML element of that type. This is a potentially dangerous choice due to possible side effects (unless a global rule is needed). By using the class as the CSS selector, also called a  **class selector** , we can safely target the `<iframe>` that's a descendant or child of the element with this class.
+
+What's the purpose of the `vertical-align` property, and what problem does it solve here? Because the content of this `<div>` naturally rests at the bottom of the container, we need the `vertical-align` property to lift this content up to the top. In conjunction with the `text-align` property, this allows the contact information to begin at the top of the `<div>` and start aligned from the left for an easy-to-read layout.

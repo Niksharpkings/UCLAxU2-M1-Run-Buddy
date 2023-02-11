@@ -201,6 +201,54 @@ section { /* selects all elements in the section tags */
   text-align: right;  /* text alignment */
 }
 
+.section-title { /* selects all elements in the section-title class */
+  font-size: 55px; /* font size height and width*/
+  display: inline-block; /* display inline-block  */
+  padding: 0px 100px 20px 100px; /* padding top and bottom, left and right*/
+  border-bottom: 3px solid; /* border bottom property  */
+  margin-bottom: 35px; /* margin spacing */
+  color: #024e76; /* text color */
+}
+
+.contact { /* selects all elements in the contact class */
+  text-align: center; /* text alignment */
+  background: #024e76; /* background color */
+}
+
+.contact h2 { /* selects all elements in the h2 tags */
+  color: #fce138; /* text color */
+}
+
+.contact-info iframe { /* selects all elements in the iframe tags */
+  width: 400px; /* width of the iframe */
+  height: 400px; /* height of the iframe */
+}
+
+.contact-info div { /* selects all elements in the div tags */
+  width: 410px; /* width of the div */
+  display: inline-block; /* display inline-block  */
+  vertical-align: top; /* vertical alignment top lift up the container to the top */
+  text-align: left; /* text alignment */
+  margin: 30px 0 0 60px; /* margin spacing 30px to the top and bottom and 0 for the right and left*/
+  color: white; /* text color */
+}
+
+.contact-info h3 { /* selects all elements in the h3 tags */
+  color: #fce138; /* text color */
+  font-size: 32px; /* font size height and width*/
+}
+
+.contact-info p, .contact-info address { /* selects all elements in the p and address tags */
+  margin: 20px 0px; /* margin spacing 20px to the top and bottom and 0 for the right and left*/
+  line-height: 1.5; /* line height */
+  font-size: 20px; /* font size height and width*/
+  font-style: normal; /* font style */
+}
+
+.contact-info a {
+  color: #fce138;
+}
+
 footer { /* selects all elements in the footer tags */
   background: #fce138; /* background color */
   width: 100%; /* width of the footer */
