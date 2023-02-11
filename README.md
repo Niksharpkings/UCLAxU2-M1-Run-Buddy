@@ -1,4 +1,4 @@
-# Project Name: Run Buddy
+#Project Name: Run Buddy
 
 ###### Development For:
 
@@ -51,15 +51,16 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 ##### Version:
 
+`v1.1.0 - | added module 1.7 snapshot zip, original module source code, and added class-notes.md info, privacy-policy.html, and secondary-styles.css added and styled. Completed Module 1 and included my a few of my own personal tunes and modifications or extra code |`
+
 `v1.0.9 - | added module 1.6 snapshot zip and added class-notes.md info, added iframe to the html and contact info, style contact info`
 
 `v1.0.8 - | added module 1.5 snapshot zip and added class-notes.md info, styled the meet the trainers section and added trainer images`
 
 `v1.0.7 - | styled the we do section and style what you do section for module 1.4 and added 1.4 snapshot zip`
 
-`v1.0.6 - | class-notes added css and html info | added image folder file with svg and png
- and linked it to the index.html image anchor in the hero, and css property | Added module 1.2, 1.3 zip original snapshot files`
- 
+`v1.0.6 - | class-notes added css and html info | added image folder file with svg and png  and linked it to the index.html image anchor in the hero, and css property | Added module 1.2, 1.3 zip original snapshot files`
+
 `v1.0.5 - | class-notes added css info | added css folder and style.css file and linked it to index.html | added css properties to the * body, header, h1, a,nav, li, and li a, color margin padding font-family background-color font-weight font-size - display text-decoration  and float |`
 
 `v1.0.4 - | Updated readme and class-notes | added new html tags, nav, a, ul, and li and added href tag to an anchor tags in the index.html`
@@ -71,6 +72,17 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 `v1.0.1 - | Added: UCLAxU2-Original-and-SnapShots folder, and Class-Nodes.md | Updated index.html with comments and element tags | `
 
 `v1.0.0 - | Repo Created | Added Files: Index.html, README.md, LICENSE, .gitignore |`
+
+---
+#### ScreenShot of Deployed Website:
+
+###### Home page - index.html ScreenShot:
+
+![index.html](image/README/uclax-u2-m1-runbuddy-index-html-127-0-0-1-5500-2023-02-11-07_09_55.png)
+
+###### Privacy & Policy page - privacy-policy.html ScreenShot:
+
+![privacy=policy.html](image/README/uclax-u2-m1-runbuddy-privacy-policy-html-2023-02-11-07_11_30.png)
 
 ---
 

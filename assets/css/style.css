@@ -1,20 +1,24 @@
-* { /* selects all elements in the document */
+* {
+  /* selects all elements in the document */
   margin: 0px; /* margin spacing */
   padding: 0px; /* padding: 0; means that there is no space between the content and the border. */
   box-sizing: border-box; /* box-sizing: border-box; means that the width and height you set for an element includes any padding and border, but not the margin. */
 }
 
-body { /* selects all elements in the body tags */
+body {
+  /* selects all elements in the body tags */
   color: #39a6b2; /* text color */
   font-family: Helvetica, Arial, sans-serif; /* font look or style family */
 }
 
-header { /* selects all elements in the header tags */
+header {
+  /* selects all elements in the header tags */
   padding: 20px 35px; /* padding top and bottom, left and right*/
   background-color: #39a6b2; /* background color */
 }
 
-header h1 { /* selects all h1 elements in the header tag */
+header h1 {
+  /* selects all h1 elements in the header tag */
   font-weight: bold; /* font weight thickness */
   font-size: 36px; /* font size height and width*/
   color: #fce138;
@@ -22,31 +26,64 @@ header h1 { /* selects all h1 elements in the header tag */
   display: inline; /* display inline means it will be displayed in the same line */
 }
 
-header a { /*select all anchor tags in the header */
+header a {
+  /*select all anchor tags in the header */
   text-decoration: none; /* removes underline from anchor tags */
   color: #fce138;
 }
 
-header nav { /* selects all elements in the nav tags */
+header nav {
+  /* selects all elements in the nav tags */
   float: right; /* float right mean it will be moved to the right side of the nav container */
   margin: 7px 0px; /* margin spacing 7px to the top and bottom and 0 for the right and left*/
 }
 
-header nav ul li { /* selects all elements in the li tags */
+header nav ul li {
+  /* selects all elements in the li tags */
   display: inline; /* display inline means it will be displayed in the same line */
 }
 
-header nav ul li a { /* selects all anchor tags in the li tags */
-  margin: 0px 30px;  /* margin spacing 0px to the top and bottom and 30px for the right and left*/
+header nav ul li a {
+  /* selects all anchor tags in the li tags */
+  margin: 0px 30px; /* margin spacing 0px to the top and bottom and 30px for the right and left*/
   font-weight: lighter; /* font weight thickness */
   font-size: 22px; /* font size height and width*/
 }
 
-section { /* selects all elements in the section tags */
+footer {
+  /* selects all elements in the footer tags */
+  background: #fce138; /* background color */
+  width: 100%; /* width of the footer */
+  padding: 40px 35px; /* padding top and bottom, left and right*/
+}
+
+footer h2 {
+  /* selects all h2 elements in the footer tag */
+  display: inline; /* display inline means it will be displayed in the same line */
+  color: #024e76; /* text color */
+  font-size: 30px; /* font size height and width*/
+  margin: 0px; /* margin spacing */
+}
+
+footer div {
+  /* selects all elements in the div tags */
+  float: right; /* float right mean it will be moved to the right side of the footer container */
+  line-height: 1.5; /* line height */
+  text-align: right; /* text alignment */
+}
+
+footer a {
+  /*select all anchor tags in the footer */
+  color: #024e76; /* text color */
+}
+
+section {
+  /* selects all elements in the section tags */
   padding: 60px; /* padding all around*/
 }
 
-.hero { /* selects all elements in the hero class*/
+.hero {
+  /* selects all elements in the hero class*/
   background-image: url("../images/hero-bg.jpg"); /* hero background image */
   height: 600px; /* height of the hero */
   background-size: cover; /* background size */
@@ -54,27 +91,31 @@ section { /* selects all elements in the section tags */
   position: relative; /* position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). */
 }
 
-.hero-form { /* selects all elements in the hero-form class */
+.hero-form {
+  /* selects all elements in the hero-form class */
+  border: solid 3px #024e76; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
   background-color: #fce138; /* background-color property sets the background color to the element selected */
   padding: 20px; /* padding all around inner margin within the border.*/
   width: 500px; /* width of the hero form */
   color: #024e76; /* text color */
-  border: solid 3px #024e76; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
   position: absolute; /* position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). */
   bottom: 120px; /* bottom property specifies the bottom position of a positioned element. */
   right: 140px; /* right property specifies the right position of a positioned element. */
 }
 
-.hero-form h3 { /* selects all h3 elements in the hero-form tag */
+.hero-form h3 {
+  /* selects all h3 elements in the hero-form tag */
   font-size: 24px; /* font size height and width*/
   margin: 0; /* margin spacing */
 }
 
-.hero-form p { /* selects all elements in the p tags */
+.hero-form p {
+  /* selects all elements in the p tags */
   margin: 5px 0px 15px 0px; /* margin spacing 5px to the top and bottom and 0 for the right and left*/
 }
 
-.form-input { /* selects all elements in the form-input class */
+.form-input {
+  /* selects all elements in the form-input class */
   border: 1px solid #024e76; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
   display: block; /* display block means it will be displayed in the same line */
   padding: 7px 15px; /* padding top and bottom, left and right*/
@@ -84,23 +125,27 @@ section { /* selects all elements in the section tags */
   margin-bottom: 15px; /* margin spacing */
 }
 
-.hero-form label { /* selects all elements in the label tags */
-  margin: 0 5px; /* margin spacing 0px to the top and bottom and 5px for the right and left*/
+.hero-form label {
+  /* selects all elements in the label tags */
+  margin: 0px 5px; /* margin spacing 0px to the top and bottom and 5px for the right and left*/
 }
 
-.hero-form button { /* selects all elements in the button tags */
-  color: #fce138;  /* text color */
+.hero-form button {
+  /* selects all elements in the button tags */
+  color: #fce138; /* text color */
   background-color: #024e76; /* background color */
   border: none; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
   padding: 10px 20px; /* padding top and bottom, left and right*/
   font-size: 16px; /* font size height and width*/
 }
 
-.intro { /* selects all elements in the intro class */
+.intro {
+  /* selects all elements in the intro class */
   text-align: center; /* text alignment */
 }
 
-.intro p { /* selects all elements in the p tags */
+.intro p {
+  /* selects all elements in the p tags */
   line-height: 1.7; /* line height */
   color: #39a6b2; /* text color */
   width: 80%; /* width of the intro paragraph */
@@ -108,137 +153,153 @@ section { /* selects all elements in the section tags */
   margin: 0px auto; /* margin spacing */
 }
 
-.steps {  /* selects all elements in the steps class */
+.steps {
+  /* selects all elements in the steps class */
   text-align: center; /* text alignment */
   background: #fce138; /* background color */
 }
 
-.steps div { /* selects all elements in the div tags */
+.steps div {
+  /* selects all elements in the div tags */
   margin-bottom: 80px; /* margin spacing */
 }
 
-.steps img { /* selects all elements in the img tags */
+.steps img {
+  /* selects all elements in the img tags */
   width: 15%; /* width of the steps image */
   margin: 10px 0px; /* margin spacing 10px to the top and bottom and 0 for the right and left*/
 }
 
-.steps h3 { /* selects all elements in the h3 tags */
+.steps h3 {
+  /* selects all elements in the h3 tags */
   color: #024e76; /* text color */
   font-size: 46px; /* font size height and width*/
   margin-top: 10px; /* margin spacing */
 }
 
-.steps p { /* selects all elements in the p tags */
+.steps p {
+  /* selects all elements in the p tags */
   color: #39a6b2; /* text color */
   font-size: 23px; /* font size height and width*/
 }
 
-.steps span { /* selects all elements in the span tags */
+.steps span {
+  /* selects all elements in the span tags */
   font-size: 38px; /* font size height and width*/
 }
 
-.section-title { /* selects all elements in the section-title class */
+.section-title {
+  /* selects all elements in the section-title class */
   font-size: 55px; /* font size height and width*/
   color: #024e76; /* text color */
-  margin-bottom: 35px;  /* margin bottom spacing */
-  padding: 0 100px 20px 100px; /* padding top and bottom, left and right*/
+  margin-bottom: 35px; /* margin bottom spacing */
+  padding: 0px 100px 20px 100px; /* padding top and bottom, left and right*/
   display: inline-block; /* display inline-block  */
   border-bottom: 3px solid; /* border bottom property  */
 }
 
-.primary-border { /* selects all elements in the primary-border class */
+.primary-border {
+  /* selects all elements in the primary-border class */
   border-color: #fce138; /* border color */
 }
 
-.secondary-border { /* selects all elements in the secondary-border class */
+.secondary-border {
+  /* selects all elements in the secondary-border class */
   border-color: #39a6b2; /* border color */
 }
 
-.trainers { /* selects all elements in the trainers class */
+.trainers {
+  /* selects all elements in the trainers class */
   text-align: center; /* text alignment */
 }
 
-.trainer { /* selects all elements in the trainer class */
+.trainer {
+  /* selects all elements in the trainer class */
   width: 900px; /* width of the trainer article container */
   margin: 0px auto 30px auto; /* margin spacing 0px to the top and bottom and auto for the right and left*/
   background: #024e76; /* background color */
   color: #fce138; /* text color */
-  overflow: auto /* overflow property specifies what happens if content overflows an element's box. */
+  overflow: auto; /* overflow property specifies what happens if content overflows an element's box. */
 }
 
-.trainer img { /* selects all elements in the img tags */
+.trainer img {
+  /* selects all elements in the img tags */
   width: 35%; /* width of the trainer image */
   float: left; /* float left mean it will be moved to the left side of the trainer container */
 }
 
-.trainer-bio { /* selects all elements in the trainer-bio class */
+.trainer-bio {
+  /* selects all elements in the trainer-bio class */
   padding: 35px; /* padding top and bottom, left and right*/
   float: left; /* float left mean it will be moved to the left side of the trainer container */
   width: 65%; /* width of the trainer-bio container */
 }
 
-.trainer-bio h3 { /* selects all elements in the h3 tags */
+.trainer-bio h3 {
+  /* selects all elements in the h3 tags */
   font-size: 32px; /* font size height and width*/
   margin-bottom: 8px; /* margin spacing */
 }
 
-.trainer-bio h4 { /* selects all elements in the h4 tags */
+.trainer-bio h4 {
+  /* selects all elements in the h4 tags */
   font-weight: lighter; /* font weight */
   font-size: 26px; /* font size height and width*/
   margin-bottom: 25px; /* margin spacing */
 }
 
-.trainer-bio p { /* selects all elements in the p tags */
+.trainer-bio p {
+  /* selects all elements in the p tags */
   font-size: 17px; /* font size height and width*/
   line-height: 1.3; /* line height */
 }
 
-.text-left { /* selects all elements in the text-left class */
+.text-left {
+  /* selects all elements in the text-left class */
   text-align: left; /* text alignment */
 }
 
-.text-right { /* selects all elements in the text-right class */
-  text-align: right;  /* text alignment */
+.text-right {
+  /* selects all elements in the text-right class */
+  text-align: right; /* text alignment */
 }
 
-.section-title { /* selects all elements in the section-title class */
-  font-size: 55px; /* font size height and width*/
-  display: inline-block; /* display inline-block  */
-  padding: 0px 100px 20px 100px; /* padding top and bottom, left and right*/
-  border-bottom: 3px solid; /* border bottom property  */
-  margin-bottom: 35px; /* margin spacing */
-  color: #024e76; /* text color */
-}
-
-.contact { /* selects all elements in the contact class */
+.contact {
+  /* selects all elements in the contact class */
   text-align: center; /* text alignment */
   background: #024e76; /* background color */
 }
 
-.contact h2 { /* selects all elements in the h2 tags */
+.contact h2 {
+  /* selects all elements in the h2 tags */
   color: #fce138; /* text color */
 }
 
-.contact-info iframe { /* selects all elements in the iframe tags */
+.contact-info iframe {
+  /* selects all elements in the iframe tags */
   width: 400px; /* width of the iframe */
   height: 400px; /* height of the iframe */
 }
 
-.contact-info div { /* selects all elements in the div tags */
+.contact-info div {
+  /* selects all elements in the div tags */
   width: 410px; /* width of the div */
   display: inline-block; /* display inline-block  */
-  vertical-align: top; /* vertical alignment top lift up the container to the top */
+  vertical-align: top; /* vertical alignment top lift up the container to the */
   text-align: left; /* text alignment */
-  margin: 30px 0 0 60px; /* margin spacing 30px to the top and bottom and 0 for the right and left*/
+  margin: 30px 0px 0px 60px; /* margin spacing 30px to the top and bottom and 0 for the right and left*/
   color: white; /* text color */
 }
 
-.contact-info h3 { /* selects all elements in the h3 tags */
+.contact-info h3 {
+  /* selects all elements in the h3 tags */
   color: #fce138; /* text color */
   font-size: 32px; /* font size height and width*/
 }
 
-.contact-info p, .contact-info address { /* selects all elements in the p and address tags */
+.contact-info p,
+.contact-info address {
+  /* selects all elements in the p and address tags */
   margin: 20px 0px; /* margin spacing 20px to the top and bottom and 0 for the right and left*/
   line-height: 1.5; /* line height */
   font-size: 20px; /* font size height and width*/
@@ -249,25 +310,3 @@ section { /* selects all elements in the section tags */
   color: #fce138;
 }
 
-footer { /* selects all elements in the footer tags */
-  background: #fce138; /* background color */
-  width: 100%; /* width of the footer */
-  padding: 40px 35px; /* padding top and bottom, left and right*/
-}
-
-footer h2 { /* selects all h2 elements in the footer tag */
-  display: inline; /* display inline means it will be displayed in the same line */
-  color: #024e76; /* text color */
-  font-size: 30px; /* font size height and width*/
-  margin: 0px; /* margin spacing */
-}
-
-footer div { /* selects all elements in the div tags */
-  float: right; /* float right mean it will be moved to the right side of the footer container */
-  line-height: 1.5; /* line height */
-  text-align: right; /* text alignment */
-}
-
-footer a { /*select all anchor tags in the footer */
-  color: #024e76; /* text color */
-}

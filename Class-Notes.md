@@ -228,7 +228,7 @@
 
 ---
 
-### Semantic HTML
+## Semantic HTML
 
 HTML (Hypertext Markup Language)
 
@@ -347,6 +347,8 @@ Follow these steps to retrieve an `<iframe>` for the address:
 The **`<address>`** element defines the contact information for the author or owner of the document or parent element.
 
 The **`<a href="mailto:info@runbuddy.io">`** element uses the `mailto:` prefix in the anchor tag's `href` attribute to instruct the browser to open the default mail client application upon clicking the link. Then it populates the address field with the email address in the `href` value.
+
+Because the `<title>` element's content appears in the browser's tab, it's good practice to structure the content as `[page title] - [site title]`. Page titles should be descriptive but also concise because Google cuts off search result titles at around 60 character
 
 ---
 

@@ -4,26 +4,56 @@
 <head><!-- Start of the head element tag. Contains information about the document for the browser, but not the content -->
   <meta charset="UTF-8" /><!-- Tells the browser to use the UTF-8 character set. charset' meta element should be the first thing in '<head>'. UTF-8 accommodates just about any character, from foreign language symbols to emojis.-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- Tells the browser to use the device's width as the width of the page, and to scale the page to fit the device's width -->
+  <meta http-equiv="content-security-policy"
+  content="connect-src 'self';
+  font-src 'self';
+  frame-src https://www.google.com/;
+  img-src 'self';
+  manifest-src 'self';
+  media-src 'self';
+  object-src 'self';
+  script-src 'none';
+  script-src-elem 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=';
+  script-src-attr 'self';
+  style-src-elem 'self';
+  style-src-attr 'self';
+  worker-src 'self'">   <!-- content security policy is for privacy and security-->
   <title>Run Buddy</title> <!-- The title of the document, which is displayed in the browser's tab -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" /><!-- Link to the Cascade Style stylesheet stylesheet -->
+  <link
+  title="stylesheet"
+  integrity="text"
+  media="only screen and (color)"
+  rel="stylesheet"
+  type="text/css"
+  href="./assets/css/style.css" />
 </head> <!-- Ending of the head element tag -->
 
 <body> <!-- Contains and/or displays the content of the document -->
   <header> <!-- header Opening-->
+    <h1>
     <a href="/">RUN BUDDY</a> <!-- "level 1" heading element-->
+    </h1>
     <nav> <!-- Navigation element -->
       <ul><!-- Unordered list element -->
         <li><!-- List item element-->
-          <a href="#what-we-do">What We Do</a> <!-- Anchor element -->
+          <a href="./index.html#what-we-do">What We Do</a> <!-- Anchor element -->
         </li>
         <li>
-          <a href="#what-you-do">What You Do</a>
+          <a href="./index.html#what-you-do">What You Do</a>
         </li>
         <li>
-          <a href="#your-trainers">Your Trainers</a>
+          <a href="./index.html#your-trainers">Your Trainers</a>
         </li>
         <li>
-          <a href="#reach-out">Reach Out</a>
+          <a href="./index.html#reach-out">Reach Out</a>
+        </li>
+        <li>
+          <a title="Privacy Policy"
+          type=text/html
+          hreflang=en
+          href="./privacy-policy.html"
+          target="_blank"
+          rel="noopener canonical noreferrer help">Privacy Policy</a>
         </li>
       </ul> <!-- Closing unordered list element -->
     </nav> <!-- Closing navigation element -->
@@ -48,45 +78,41 @@
           <label for="trainer-no">No</label> <!-- Label element -->
         </p> <!-- Closing paragraph element -->
         <p>  <!-- Paragraph element -->
-          <label for="checkbox"> <!-- Label element -->
-            I acknowledge that I am at least 18 years of age.
-          </label>
+          <label for="checkbox">I acknowledge that I am at least 18 years of age.</label><!-- Label element -->
           <input type="checkbox" name="age-confirm" id="checkbox" /> <!-- Checkbox input box-->
         </p>
-        <button type="submit"> <!-- submit button-->
-          Get running!
-        </button>
+        <button type="submit">Get running!</button><!-- submit button-->
       </form>
     </div>
   </section>
 
   <section id="what-we-do" class="intro"><!-- "what we do" section -->
-    <h2 class="section-title secondary-border">What We Do</h2> <!-- "level 2" heading element-->
+    <h2 class="section-title primary-border">What We Do</h2> <!-- "level 2" heading element-->
     <p>
-      butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+      lorem random text -> butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
     </p>
   </section>
 
   <section id="what-you-do" class="steps"> <!-- "what you do" section -->
-    <h2 class="section-title primary-border">What You Do</h2> <!-- "level 2" heading element-->
+    <h2 class="section-title secondary-border">What You Do</h2> <!-- "level 2" heading element-->
     <div>
       <img src="./assets/images/step-1.svg" alt="What you do step 1" /> <!-- SVG Image element -->
       <h3>Step 1: <span>Fill Out the Form Above.</span></h3> <!-- "level 3" heading element-->
       <p>You're already here, so why not?</p> <!-- Paragraph element -->
     </div>
-  
+
     <div>
       <img src="./assets/images/step-2.svg" alt="what you do step 2" />
       <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
       <p>Are you here to build muscle, lose weight, or just feel good?</p>
     </div>
-  
+
     <div>
       <img src="./assets/images/step-3.svg" alt="what you do step 3" />
       <h3>Step 3: <span>Get Running.</span></h3>
       <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
     </div>
-  
+
     <div>
       <img src="./assets/images/step-4.svg" alt="what you do step 4" />
       <h3>Step 4: <span>See Results.</span></h3>
@@ -96,7 +122,7 @@
 
   <section id="your-trainers" class="trainers"> <!-- "meet the trainers" section -->
     <h2 class="section-title primary-border">Meet The Trainers</h2> <!-- "level 2" heading element-->
-  
+
     <article class="trainer"> <!-- Trainer #1 article -->
       <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" /> <!-- image of trainer 1-->
       <div class="trainer-bio text-left"> <!-- div tag in artical for trainer # 1-, align left -->
@@ -136,7 +162,7 @@
 
   </section>
 
-  <section id="reach-out"> <!-- "reach out" section -->
+  <section id="reach-out" class="contact"> <!-- "reach out" section -->
     <h2 class="section-title secondary-border">Reach Out</h2> <!-- "level 2" heading element-->
     <div class="contact-info">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.1079747227936!2d-120.42364418397035!3d37.92790791110593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8090c49129b6ac57%3A0xb56c7eb95a2cd8bd!2sMain%20St%2C%20California%2095327!5e0!3m2!1sen!2sus!4v1616426329495!5m2!1sen!2sus" 
@@ -167,9 +193,14 @@
   <footer> <!-- footer -->
     <h2>❤️ Made with love by Run Buddy.</h2> <!-- "level 2" heading element-->
     <div>
-      <a href="#">Read Our Privacy Policy</a> <!-- Anchor element -->
+      <a title="Privacy Policy"
+      type=text/html
+      hreflang=en
+      href="./privacy-policy.html"
+      target="_blank"
+      rel="noopener canonical noreferrer help">Read Our Privacy Policy</a> <!-- Anchor element -->
       <br> <!-- line break -->
-      &copy; 2019 Run Buddy, Inc.
+      &copy; 2023 Run Buddy, Inc.
     </div>
   </footer> <!-- Closing footer element -->
 </body>

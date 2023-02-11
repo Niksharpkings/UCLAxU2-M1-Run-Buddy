@@ -1,0 +1,175 @@
+* { /* selects all elements in the document */
+  margin: 0px; /* margin spacing */
+  padding: 0px; /* padding: 0; means that there is no space between the content and the border. */
+  box-sizing: border-box; /* box-sizing: border-box; means that the width and height you set for an element includes any padding and border, but not the margin. */
+}
+
+body { /* selects all elements in the body tags */
+  color: #39a6b2; /* text color */
+  font-family: Helvetica, Arial, sans-serif; /* font look or style family */
+  background-color: #fce138;
+}
+
+header { /* selects all elements in the header tags */
+  padding: 20px 35px; /* padding top and bottom, left and right*/
+  background-color: #39a6b2; /* background color */
+}
+
+header h1 { /* selects all h1 elements in the header tag */
+  font-weight: bold; /* font weight thickness */
+  font-size: 36px; /* font size height and width*/
+  color: #fce138;
+  margin: 0; /* margin spacing */
+  display: inline; /* display inline means it will be displayed in the same line */
+}
+
+header a { /*select all anchor tags in the header */
+  text-decoration: none; /* removes underline from anchor tags */
+  color: #fce138;
+}
+
+header nav { /* selects all elements in the nav tags */
+  float: right; /* float right mean it will be moved to the right side of the nav container */
+  margin: 7px 0px; /* margin spacing 7px to the top and bottom and 0 for the right and left*/
+}
+
+header nav ul li { /* selects all elements in the li tags */
+  display: inline; /* display inline means it will be displayed in the same line */
+}
+
+header nav ul li a { /* selects all anchor tags in the li tags */
+  margin: 0px 30px;  /* margin spacing 0px to the top and bottom and 30px for the right and left*/
+  font-weight: lighter; /* font weight thickness */
+  font-size: 22px; /* font size height and width*/
+}
+
+section { /* selects all elements in the section tags */
+  padding: 60px; /* padding all around*/
+}
+
+article { /* selects all elements in the article tags */
+  background: #fce138; /* background color */
+  padding: 60px; /* padding all around*/
+  margin: 60px 0px; /* margin spacing 60px to the top and bottom and 0 for the right and left*/
+}
+
+article h2 { /* selects all h2 elements in the article tag */
+  color: #024e76; /* text color */
+  margin-bottom: 30px; /* margin spacing */
+}
+
+article p { /* selects all p elements in the article tag */
+  font-size: 16px; /* font size height and width*/
+  line-height: 1.5; /* line height */
+}
+
+article p span { /* selects all span elements in the article tag */
+  color: #024e76; /* text color */
+}
+
+article p a { /*select all anchor tags in the article */
+  color: #024e76; /* text color */
+}
+
+article p a:hover { /*select all anchor tags in the article when hovered */
+  color: #b23939; /* text color */
+}
+
+article p a:visited { /*select all anchor tags in the article when visited */
+  color: #810c909a; /* text color */
+}
+
+article p a:active { /*select all anchor tags in the article when active */
+  color: #b23939; /* text color */
+}
+
+article p a:focus { /*select all anchor tags in the article when focused */
+  color: #b23939; /* text color */
+}
+
+article p a:link { /*select all anchor tags in the article when linked */
+  color: #b23939; /* text color */
+}
+
+
+article ul li { /* selects all elements in the li tags */
+  padding-left: 1%;
+  font-size: 20px; /* font size height and width*/
+  line-height: 1.5; /* line height */
+  margin-bottom: 10px; /* margin spacing */
+}
+
+footer { /* selects all elements in the footer tags */
+  background: #024e76; /* background color */
+  width: 100%; /* width of the footer */
+  padding: 40px 35px; /* padding top and bottom, left and right*/
+  color: #fce138;
+}
+
+footer h2 { /* selects all h2 elements in the footer tag */
+  display: inline; /* display inline means it will be displayed in the same line */
+  
+  font-size: 30px; /* font size height and width*/
+  margin: 0px; /* margin spacing */
+}
+
+footer div { /* selects all elements in the div tags */
+  float: right; /* float right mean it will be moved to the right side of the footer container */
+  line-height: 1.5; /* line height */
+  text-align: right; /* text alignment */
+}
+
+footer a { /*select all anchor tags in the footer */
+  color: #fce138;
+}
+
+.hero { /* selects all elements in the hero class*/
+  background-image: url(../images/hero-bg.jpg); /* background image */
+  background-size: cover; /* background size */
+  background-position: bottom; /* background position */
+  position: relative; /* position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). */
+  height: auto; /* height of the hero */
+  text-align: center; /* text alignment */
+  margin-bottom: 40px;
+} /* margin spacing */
+
+.hero h2 { /* selects all h2 elements in the hero class */
+  color: #fce138; /* text color */
+  font-size: 60px; /* font size height and width*/
+  display: inline-block; /* display inline means it will be displayed in the same line */
+  position: relative; /* position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). */
+}
+
+.page-title { /* selects all elements in the page-title class*/
+  color: #fce138; /* background color */
+  border-bottom: 4px solid #fce138; /* border bottom */
+  padding: 0px 80px 15px 80px;
+  font-weight: normal;
+  font-size: 42px;
+  font-style: italic;
+}
+
+.secondary-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.secondary-content h3 {
+  font-size:  25px;
+  margin: 20px 0px 20px 0px;
+}
+
+.secondary-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0px 20px 0px;
+}
+
+.secondary-content ul {
+  margin: 15px 20px 15px 20px;
+}
+
+.secondary-content ul li {
+  color: #39a6b2;
+  margin: 10px 0px 10px 0px;
+}
