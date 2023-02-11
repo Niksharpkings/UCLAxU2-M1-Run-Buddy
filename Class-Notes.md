@@ -297,7 +297,6 @@ Here are some popular attributes:
 
 (`"/"`) a forward slash—will always represent the path to the topmost directory of an application or project. will be taken to the topmost directory
 
-
 If you ever need to quickly fill an HTML element with dummy text in VS Code, type the word "lorem" and press Tab. Many other dummy text generators are available online.
 
 ## About SVG Files
@@ -311,6 +310,17 @@ Relative paths start from the current directory (for example, `../images/hero-bg
 extra attribute we should make sure every image has: the `alt` attribute. The `alt` attribute explains the content and context of images to search engines and assistive technology such as screen readers.
 
 As a developer, you will often have to make a subjective decisions about your project’s HTML and CSS. In these cases, it is important to take time to think about how the image will be used and carefully read the project’s specifications or acceptance criteria for guidance. Many companies also have an in-house style guide that can help inform your choice and make certain your code meets both the client's and users' needs. To learn more about image usage, refer to the [alt attribute guidelines from the W3C **Links to an external site.**](https://www.w3.org/WAI/tutorials/images/).
+
+
+In Lesson 4, we discussed one way of using `alt` by leaving its value empty. We did this because the image it was associated with isn't important for the overall user experience; it is what's known as a  **decorative image** . In this case, the image does serve as content to the page and is known as a  **simple image** , so we need to give it a more meaningful `alt` value.
+
+Here are some guidelines for `alt` values:
+
+* They must describe the image in less than 140 characters.
+* They should convey the content and purpose of the image.
+* They should not begin with "image of…" or "graph of…", as screen readers already provide that context.
+
+When a parent HTML element's style is applied to any child element, it is called  **inheritance** .
 
 ---
 
@@ -482,3 +492,6 @@ This is shorthand for setting a top and bottom margin of zero and a left and rig
 With Chrome DevTools, we can inspect the element's margins before `auto` is applied and after. In the following image, the orange boxes indicate the margins:
 
 ![1676113416358](image/Class-Notes/1676113416358.png)
+
+
+The `overflow` property told the trainer's `<article>` element that it does in fact have content inside it, and that it needs to look for it and account for those two floated HTML elements' sizes. This is known as providing **block formatting context** to the elemen

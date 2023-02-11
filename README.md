@@ -51,6 +51,8 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 ##### Version:
 
+`v1.0.8 - | added module 1.5 snapshot zip and added class-notes.md info, styled the meet the trainers section and added trainer images`
+
 `v1.0.7 - | styled the we do section and style what you do section for module 1.4 and added 1.4 snapshot zip`
 
 `v1.0.6 - | class-notes added css and html info | added image folder file with svg and png
