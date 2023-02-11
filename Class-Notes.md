@@ -42,7 +42,7 @@
 
 `cp` `<source>` `<destination>` `<source>` `<destination>` command copies files and directories.
 
-`cat` `<NameTheFile>` command prints the contents of a file to the screen. 
+`cat` `<NameTheFile>` command prints the contents of a file to the screen.
 
 `echo` `<NameTheString>` command prints a string to the screen.
 
@@ -228,27 +228,37 @@
 
 ---
 
-
-
-
 ### HTML
 
 HTML (Hypertext Markup Language)
 
 `<!DOCTYPE html>`  Tells the browser to interpret as a HTML documen
 `<html lang="en">` Represents the root of an HTML document and tells the browser that the language of the document is English
-`<head>`  Start of the head element tag. Contains information about the document for the browser, but not the content mportant to include because it specifies the range of characters (letters, numbers, symbols, etc.) that can be used. 
-`<meta charset="UTF-8" />` Tells the browser to use the UTF-8 character set. charset' meta element should be the first thing in '<head>'. UTF-8 accommodates just about any character, from foreign language symbols to emojis.
+`<head>`  Start of the head element tag. Contains information about the document for the browser, but not the content mportant to include because it specifies the range of characters (letters, numbers, symbols, etc.) that can be used.
+`<meta charset="UTF-8" />` Tells the browser to use the UTF-8 character set. charset' meta element should be the first thing in '`<head>`'. UTF-8 accommodates just about any character, from foreign language symbols to emojis.
 `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`  Tells the browser to use the device's width as the width of the page, and to scale the page to fit the device's width
 `<title>Run Buddy</title>`  The title of the document, which is displayed in the browser's tab
 `</head>`  Ending of the head element tag
 `<body>`  Contains and/or displays the content of the document
+
 # `<h1>RUN BUDDY</h1>`  "level 1" heading element
+
 ## `<h2>RUN BUDDY</h2>`  "level 2" heading element
+
 ### `<h3>RUN BUDDY</h3>`  "level 3" heading element
+
 #### `<h4>RUN BUDDY</h4>`  "level 4" heading element
+
 ##### `<h5>RUN BUDDY</h5>`  "level 5" heading element
+
 ###### `<h6>RUN BUDDY</h6>`  "level 6" heading element
+
 What We Do What You Do Your Trainers Reach Out  text in the body element
 `</body>`  Ending of the body element tag
 `</html>`  Ending of the html element tag
+
+![1676106168140](image/Class-Notes/1676106168140.png)
+
+`<div>` elements here, which are like containers, to hold relevant information together. stands for "content division."
+
+`<section>` element tag  represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.
