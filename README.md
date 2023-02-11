@@ -34,6 +34,7 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 [GitHub Repo - https://github.com/Niksharpkings/UCLAxU2-M1-Run-Buddy](https://github.com/Niksharpkings/UCLAxU2-M1-Run-Buddy)
 
 ---
+
 ### Development Information:
 
 #### Coding Language Used:
@@ -50,10 +51,12 @@ Full-Stack Web Development Coding Boot Camp 2021-2022
 
 ##### Version:
 
+`1.0.1 - | Added: UCLAxU2-Original-and-SnapShots folder, and Class-Nodes.md | Updated index.html with comments and element tags | `
+
 `1.0.0 - | Repo Created | Added Files: Index.html, README.md, LICENSE, .gitignore |`
 
 ---
 
 ###### Licence, Privacy & Policy Note:
 
-This repoitory and contents was originally created and designed by UCLA Extension + U2 Network Boot Camp for the Full-Stack Web Development Coding Boot Camp 2021-2023 as a step by step tutorial guide/module that was required to be recreated/replicated/reproduced by me, Nikita "Nik" Sharpio aka account named "niksharpkings", and other students alike. I am not the true claiming owner/designer/creater/developer of this project or files excluding the README.md, .gitignore, LICENSE and some of the original content was modifed with my own personal comments and additional tunes. I do not intend or plan to claim any ownership or rights of the original content of this github repository, but I was & am endorsed, ratified, recommend, adviced, & allowed to publish this dittoed repository by the school program from scratch as reference proof or enrollment & a profile model, guidance, pointer, reference, or example.  Any modifications I made to the original files will be in the root directory, otherwise all "original content" will be stored in "UCLAxU2-Original-SnapShot" folder.
+This repoitory and contents was originally created and designed by UCLA Extension + U2 Network Boot Camp for the Full-Stack Web Development Coding Boot Camp 2021-2023 as a step by step tutorial guide/module that was required to be recreated/replicated/reproduced by me, Nikita "Nik" Sharpio aka account named "niksharpkings", and other students alike. I am not the true claiming owner/designer/creater/developer of this project or files excluding the README.md, .gitignore, LICENSE, Class-Notes.md and some of the original content was modifed with my own personal comments and additional tunes. I do not intend or plan to claim any ownership or rights of the original content of this github repository, but I was & am endorsed, ratified, recommend, adviced, & allowed to publish this dittoed repository by the school program from scratch as reference proof or enrollment & a profile model, guidance, pointer, reference, or example.  Any modifications I made to the original files will be in the root directory, otherwise all "original content" will be stored in "UCLAxU2-Original-SnapShot" folder.
