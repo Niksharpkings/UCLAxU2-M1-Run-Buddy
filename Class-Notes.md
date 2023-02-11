@@ -297,6 +297,21 @@ Here are some popular attributes:
 
 (`"/"`) a forward slash—will always represent the path to the topmost directory of an application or project. will be taken to the topmost directory
 
+
+If you ever need to quickly fill an HTML element with dummy text in VS Code, type the word "lorem" and press Tab. Many other dummy text generators are available online.
+
+## About SVG Files
+
+This is XML, which is like a cousin to HTML. Unlike PNGs or JPGs, which are made up of pixels, SVGs (or Scalable Vector Graphics) are defined as a series of points and lines (the `<path>` elements you see in the XML) that are filled in with color. SVG images can accommodate basically any screen size without losing quality because the graphics will scale. That makes SVGs perfect for things like icons and logos.
+
+`<img>` element is very useful because it can display any image format. We just need to make sure the `src` attribute points to a file that can be found.
+
+Relative paths start from the current directory (for example, `../images/hero-bg.jpg`). Absolute paths are fixed (for example, `/Users/<username>/Desktop/run-buddy/assets/css/style.css`) and should be avoided.
+
+extra attribute we should make sure every image has: the `alt` attribute. The `alt` attribute explains the content and context of images to search engines and assistive technology such as screen readers.
+
+As a developer, you will often have to make a subjective decisions about your project’s HTML and CSS. In these cases, it is important to take time to think about how the image will be used and carefully read the project’s specifications or acceptance criteria for guidance. Many companies also have an in-house style guide that can help inform your choice and make certain your code meets both the client's and users' needs. To learn more about image usage, refer to the [alt attribute guidelines from the W3C **Links to an external site.**](https://www.w3.org/WAI/tutorials/images/).
+
 ---
 
 # CSS
@@ -403,3 +418,58 @@ We can use the `float` property when we have HTML elements that would look bette
 CSS allows us to override these elements' default layout definitions through a few different ways, but the most on-the-nose one is to apply a `display` property to that element. For example, `display: block` forces an element to occupy 100% of the width of its parent. On the other hand, `display: inline` makes an element only occupy the space it needs and allows other elements to flow "in line" with it horizontally.
 
 The asterisk `*` we used here is used quite often in programming. It is typically called a wildcard, but in CSS it is known as a  **universal selector** . This is essentially a catch-all selector that says, "I won't match one thing—I'll match everything!"
+
+**`<br />`** : We used the break element (`<br/>`) to create a line break
+
+**`line-height`** property assigns how much vertical space should be between lines of text content. The value (1.5) means we want the spacing to be 1.5 times the size of the font
+
+**`text-align`** property lets us align the text to the left, right, center, or justified. By default, it is left-aligned.
+
+**`&copy;`** : In the preceding code, `&copy;` precedes the Run Buddy copyright notice; it creates the little copyright symbol. This is called an  **HTML entity** , a special code that starts with an ampersand (`&`) and can be used to create symbols.
+In case you haven't noticed, every HTML element is surrounded by a less than (`<`) and greater than (`>`) symbol. So what happens if we need to use a greater than sign as content and not as HTML syntax? The solution is to use the HTML entity `&gt;` which creates a `>`.
+
+`box-sizing` property determines how to calculate the `width` and `height` of each element. There are two possible values for the `box-sizing` property: `content-size` and `border-box`.
+
+* The **`content-size`** value is the default, and calculates the height and width of the element by only counting the `content` box of the CSS Box Model. This means that the `border` and `padding` must be calculated separately and added to the width and height to determine the size of the element.
+* The **`border-box`** value calculates the height and width of the element by including the `border` and `padding` additions to the `content` box.
+
+![1676110526914](image/Class-Notes/1676110526914.png)
+
+sign-up form is a  **call to action** , or  **CTA** . The main purpose of a CTA is to encourage users via a story, advertisement, or dazzling piece of content to do something. CTAs play a vital role in converting a visitor into a sales lead—that's why we want it at the top of the page!
+
+**Text fields** are where the user will enter their name and contact information.
+
+
+The `<label>` text not only offers a visual directive of what to enter but also programmatically links to the associated `<input>`. When a user with a visual impairment uses a screen reader, the label will be read out loud when they focus on the input field. Labels also make it easier to fill out forms on mobile devices; clicking on the label will target the focus to the associated input field, which can be hard to do manually on a small screen.
+
+Let's break down the attributes in the `<label>` and `<input>` elements:
+
+* The **`for`** attribute in the `<label>` element programmatically links to the `id` attribute in the `<input>` element.
+* The **`type`** attribute relates to the type of input element we're using. Here, we want a text field, which is also the default value.
+* The **`placeholder`** attribute offers a hint or label within the text field, but will not be submitted if this field if left blank.
+* The **`name`** attribute identifies the element so the response can be referenced after the form is submitted.
+
+
+**Dot notation** is the "." that precedes the class `hero` to indicate to the browser that we're using a class as the CSS selector.
+
+The **`background-image`** property uses the CSS function `url()` to link a resource such as an image, web font, or GIF. Here we're using a relative URL path to select a background image
+
+**`height`** property fixed at 600px gives an exact size of the section, which is important in this context to allow room for the sign-up form.
+
+The **`background-size`** property can set the size of the background image to its original size or make it stretched, repeated, or constrained to fit the available space. In this case, we'll set it to `cover` to shrink the image so that parts of it won't get clipped. Other options allow repeated images for a tiled look, similar to how background image displays are configured for your computer's background desktop image.
+
+The **`background-color`** property sets the background color to the element selected. VS Code allows typing in the names of colors as well as the hex code.
+
+`position` property is an important CSS property that defines how an element is positioned on the webpage.
+
+Here are some of the property's values and how they affect the relationship of the element to the surrounding elements:
+
+A value of **`static`** is the default value and maintains the order of the natural flow of the elements on the page (i.e., the order created in the HTML). `static` positioning isn't affected by the `top`, `bottom`, `left`, and `right` properties. Currently, the sign-up container is in this position.
+
+A value of **`relative`** positioning uses the `top` and `bottom` properties to vertically offset and the `left` and `right` properties to horizontally offset the element from the `static` position.
+
+A value of **`absolute`** positioning removes the element from the natural flow of the page elements and uses the `top`, `bottom`, `left`, and `right` properties to offset relative to the element's parent, or containing, element's margins.
+
+A value of **`fixed`** positioning removes the element from the natural flow of the page elements and positions it relative to the viewport or browser window so that it isn't affected by scrolling. The `fixed` position value uses the `top`, `bottom`, `left` and `right` properties to offset the element from the viewport's margins.
+
+![1676111781136](image/Class-Notes/1676111781136.png)

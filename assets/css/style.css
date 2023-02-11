@@ -1,6 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
+* { /* selects all elements in the document */
+  margin: 0px; /* margin spacing */
+  padding: 0px; /* padding: 0; means that there is no space between the content and the border. */
+  box-sizing: border-box; /* box-sizing: border-box; means that the width and height you set for an element includes any padding and border, but not the margin. */
 }
 
 body { /* selects all elements in the body tags */
@@ -39,4 +40,81 @@ header nav ul li a { /* selects all anchor tags in the li tags */
   margin: 0px 30px;  /* margin spacing 0px to the top and bottom and 30px for the right and left*/
   font-weight: lighter; /* font weight thickness */
   font-size: 22px; /* font size height and width*/
+}
+
+section { /* selects all elements in the section tags */
+  padding: 60px; /* padding all around*/
+}
+
+.hero { /* selects all elements in the hero tags */
+  background-image: url("../images/hero-bg.jpg"); /* hero background image */
+  height: 600px; /* height of the hero */
+  background-size: cover; /* background size */
+  background-position: center; /* background initial position */
+  position: relative; /* position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). */
+}
+
+.hero-form { /* selects all elements in the hero-form tags */
+  background-color: #fce138; /* background-color property sets the background color to the element selected */
+  padding: 20px; /* padding all around inner margin within the border.*/
+  width: 500px; /* width of the hero form */
+  color: #024e76; /* text color */
+  border: solid 3px #024e76; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
+  position: absolute; /* position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). */
+  bottom: 120px; /* bottom property specifies the bottom position of a positioned element. */
+  right: 140px; /* right property specifies the right position of a positioned element. */
+}
+
+.hero-form h3 { /* selects all h3 elements in the hero-form tag */
+  font-size: 24px; /* font size height and width*/
+  margin: 0; /* margin spacing */
+}
+
+.hero-form p { /* selects all elements in the p tags */
+  margin: 5px 0px 15px 0px; /* margin spacing 5px to the top and bottom and 0 for the right and left*/
+}
+
+.form-input {
+  border: 1px solid #024e76; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
+  display: block; /* display block means it will be displayed in the same line */
+  padding: 7px 15px; /* padding top and bottom, left and right*/
+  font-size: 16px; /* font size height and width*/
+  color: #024e76; /* text color */
+  width: 100%; /* width of the form input */
+  margin-bottom: 15px; /* margin spacing */
+}
+
+.hero-form label { /* selects all elements in the label tags */
+  margin: 0 5px; /* margin spacing 0px to the top and bottom and 5px for the right and left*/
+}
+
+.hero-form button { /* selects all elements in the button tags */
+  color: #fce138;  /* text color */
+  background-color: #024e76; /* background color */
+  border: none; /* border property is a shorthand property for setting the individual border properties in a single declaration. */
+  padding: 10px 20px; /* padding top and bottom, left and right*/
+  font-size: 16px; /* font size height and width*/
+}
+
+footer { /* selects all elements in the footer tags */
+  background: #fce138; /* background color */
+  width: 100%; /* width of the footer */
+  padding: 40px 35px; /* padding top and bottom, left and right*/
+}
+
+footer h2 { /* selects all h2 elements in the footer tag */
+  display: inline; /* display inline means it will be displayed in the same line */
+  color: #024e76; /* text color */
+  font-size: 30px; /* font size height and width*/
+  margin: 0px; /* margin spacing */
+}
+
+footer div { /* selects all elements in the div tags */
+  float: right; /* float right mean it will be moved to the right side of the footer container */
+  line-height: 1.5; /* line height */
+  text-align: right; /* text alignment */
+}
+
+footer a { /*select all anchor tags in the footer */
+  color: #024e76; /* text color */
 }
